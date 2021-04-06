@@ -15,10 +15,13 @@ hrs = hrs < 10 ? '0' + hrs : hrs;
 mins = mins < 10 ? '0' + mins : mins;
 secs = secs < 10 ? '0' + secs : secs;
 
+let calendar = `${date}`;
 let time = `${hrs} : ${mins}: ${secs} ${period}`;
   document.getElementById("clock").innerText = time;
+  document.getElementById("cald").innerText = calendar;
   setTimeout(clock, 1000);
   
 }
 
 clock();
+
